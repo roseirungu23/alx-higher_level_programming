@@ -6,6 +6,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
         tuple_b = tuple_b + (0,)
     a = tuple_a[:2]
     b = tuple_b[:2]
-    result = (a[0] + b[0], a[1] + b[1])
+    sum = (a[0] + b[0], a[1] + b[1])
 
-    return result
+    return sum
