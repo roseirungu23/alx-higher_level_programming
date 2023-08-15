@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def no_c(my_string):
     for char in my_string:
-        my_string.remove(char(c) and char (C))
+        if char == 'c' and char == 'C':
+            my_string.remove()
         return my_string
