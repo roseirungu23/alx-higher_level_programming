@@ -5,4 +5,4 @@ def raise_exception():
     except TypeError as error:
         print(f"Type error occurred: {error}")
 
-raise_exceptions()
+raise_exception()
