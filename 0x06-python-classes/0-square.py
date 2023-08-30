@@ -9,6 +9,11 @@ class Square:
     This is the Square class.
 
     Attributes:
-        No attributes at the moment.
+        None at the moment.
     """
+
+    def __init__(self):
+        """
+        Initializes an empty Square object.
+        """
         pass
