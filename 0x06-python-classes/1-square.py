@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-class Square:
-    """Defines a square by its size.
+"""Define a class Square"""
 
-    Attributes:
-        __size (int): The size of the square."""
+
+class Square:
+    """Represent a square"""
 
     def __init__(self, size):
         """Initializes a new Square instance.
