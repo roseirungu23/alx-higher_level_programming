@@ -11,6 +11,4 @@ class Square:
     Attributes:
         No attributes at the moment.
     """
-
-    def __init__(self):
         pass
