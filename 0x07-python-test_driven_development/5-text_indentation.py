@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """Defines function text_indentation"""
 
-def  text_indentation(text):
-    """prints a text with 2 new lines after each of these characters: ., ? and :"""
+
+def text_indentation(text):
+    """prints a text with 2 new lines after each of these
+        characters: ., ? and :"""
     Args:
-        text (str): The input text.
+        text(str): The input text.
 
     Raises:
         TypeError: If text is not a string.
