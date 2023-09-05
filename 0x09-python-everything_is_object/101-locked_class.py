@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-"""Defines class LockedClass."""
+#101-locked_class.py
+
+"""Defines a Locked Class."""
 
 
 def LockedClass:
-    """prevents the user from dynamically creating new instance attributes."""
-    __slots__ = ("first_name",)
+    """
+    prevents the user from creating new instance attributes for 
+    anything but attributes called 'first_name'.
+    """
+
+    __slots__ = ["first_name"]
