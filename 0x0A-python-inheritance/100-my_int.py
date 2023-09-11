@@ -1,19 +1,28 @@
-#!/usr/python3
+#!/usr/bin/python3
 """
-Defines class MyInt
+Defines a class MyInt
 """
 
 
 class MyInt(int):
-    """rebel version of an integer"""
-    def __new__(cls, *args, **kwargs):
-        """create a new instance of the class"""
-        return super(MyInt, cls).__new__(cls, *args, **kwargs)
+    """
+    MyInt class that inherits from int with inverted == and != operators.
+    """
 
     def __eq__(self, other):
-        """inverts != to =="""
-        return int(self) != other
+        """
+        Inverted equality operator.
+
+        Args:
+            other: The value to compare with.
+        """
+        return super().__ne__(other)
 
     def __ne__(self, other):
-        """inverts == to !="""
-        return int(self) == other
+        """
+        Inverted inequality operator.
+
+        Args:
+            other: The value to compare with.
+        """
+        return super().__eq__(other)
