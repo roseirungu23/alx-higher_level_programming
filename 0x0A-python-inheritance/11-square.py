@@ -1,34 +1,34 @@
 #!/usr/bin/python3
 """
-Defines class BaseGeometry
+Contains the class BaseGeometry and subclass Rectangle
 """
 
 
 class BaseGeometry:
-    """writes class BaseGeometry"""
+    """A class with public instance methods area and integer_validator"""
     def area(self):
-        """raise an exception when called"""
+        """raises an exception when called"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """validates value"""
-        if not isinstance(value, int):
+        """validates the value is an integer greater than 0"""
+        if type(value) is not int:
             raise TypeError("{:s} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{:s} must be greater than 0".format(name))
 
 
 class Rectangle(BaseGeometry):
-    """Write a class Rectangle that inherits from BaseGeometry"""
+    """Rectangle representation"""
     def __init__(self, width, height):
-        """initializes class Rectangle"""
+        """instantiation of the rectangle"""
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
         self.__height = height
 
     def area(self):
-        """Calculates the area of the rectangle"""
+        """calculates the area of the rectangle"""
         return self.__width * self.__height
 
     def __str__(self):
@@ -45,7 +45,7 @@ class Square(Rectangle):
         super().__init__(size, size)
 
     def area(self):
-        """"returns the area of the square"""
+        """Calculates the area of the square"""
         return self.__size ** 2
 
     def __str__(self):
