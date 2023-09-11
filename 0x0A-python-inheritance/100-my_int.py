@@ -6,6 +6,10 @@ Defines class MyInt
 
 class MyInt(int):
     """rebels the operators"""
+    def __new__(cls, *args, **kwargs):
+        """create a new instance of the class"""
+        return super(MyInt, cls).__new__(cls, *args, **kwargs)
+
     def __eq__(self, other):
         """inverts == to !="""
         return int(self) != other
