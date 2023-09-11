@@ -11,9 +11,9 @@ class MyInt(int):
         return super(MyInt, cls).__new__(cls, *args, **kwargs)
 
     def __eq__(self, other):
-        """what was != is now =="""
+        """inverts != to =="""
         return int(self) != other
 
     def __ne__(self, other):
-        """what was == is now !="""
+        """inverts == to !="""
         return int(self) == other
