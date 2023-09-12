@@ -1,4 +1,4 @@
-#!/usr/bbin/python3
+#!/usr/bin/python3
 """
 Defines function append_write
 """
